@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-header{
+    background-color: #181897;
+    max-width: 100vw;
+}
+
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo{
+    max-width: 100%;
+    height: 50px;
+    margin: 12px 25px;
+}
+
+.navbar-micuenta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.number-items{
+    position: absolute;
+    top: 15px;
+    right: 34px;
+    color: #fff;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-menu{
+    display: none;
+}
+
+.barra-menu  img{
+    width: 40px;
+    height: 40px;
+}
+
+.enlaces{
+    margin: 10px 0 10px 60px;
+}
+
+.enlaces a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.enlaces a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.caja-busqueda{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 20px 10px 60px;
+}
+
+.caja-busqueda input{
+    width: 340px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.caja-busqueda input:focus{
+    outline: none;
+    color: #c6c6c6;
+}
+
+.caja-busqueda img{
+    position: absolute;
+    right: 50px;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 260px;
+    background-color: #c6c6c6;
+    display: none;
+    z-index: 1000;
+}
+
+
+.enlaces-sidebar a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px;
+    height: 40px;
+}
+
+#close{
+    display: block;
+    font-size: 30px;
+    float: right;
+    text-decoration: none;
+}
+
+.enlaces-sidebar a:hover{
+    color: #181897;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 400px){
+    .navbar-logo{
+        max-width: 100%;
+        height: 20px;
+        margin: 5px 15px;
+    }
+
+    .navbar-micuenta{
+        margin: 0 10px;
+    }
+
+    .number-items{
+        position: absolute;
+        top: -4px;
+        right: 8px;
+        color: #fff;
+    }
+
+    .enlaces a{
+        display: none;
+    }
+
+    .barra-menu{
+        display: block;
+        margin: 7px 0 7px 20px;
+    }
+
+    .caja-busqueda{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 7px 30px 7px 20px;
+    }
+
+    .caja-busqueda input{
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+    }
+
+    .caja-busqueda img{
+        position: absolute;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .enlaces a{
+        display: none;
+    }
+
+    .barra-menu{
+        display: block;
+        margin: 7px 0 7px 40px;
+    }
+
+    .caja-busqueda{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 7px 30px 7px 20px;
+    }
+
+    .caja-busqueda input{
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+    }
+}
+
+@media screen and (max-width:1040px){
+    .enlaces a{
+        display: none;
+    }
+
+    .barra-menu{
+        display: block;
+        margin: 7px 0 7px 40px;
+    }
+
+    .caja-busqueda{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 7px 30px 7px 20px;
+    }
+
+    .caja-busqueda input{
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        letter-spacing: -1px;
+        text-transform: capitalize;
+    }
+
+    .sidebar{
+        display: none;
+    }
+}
